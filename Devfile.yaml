@@ -19,14 +19,6 @@ components:
         containerPath: /home/jboss/.m2
     alias: cnd
     image: 'quay.io/marrober/devex-terminal-4@sha256:83cc15c3c1ccafc25123af23e3348a5945a054287a45f6c4e0cd5426cd3457b7'
-  - id: redhat/project-initializer/latest
-    type: chePlugin
-  - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
-    type: chePlugin
-  - id: redhat/vscode-openshift-connector/latest
-    type: chePlugin
-  - id: ms-vscode/vscode-github-pullrequest/latest
-    type: chePlugin
 commands:
   - name: Login to OpenShift
     actions:

@@ -23,14 +23,14 @@ var counter = 0;
 var ignore_switch = 0;
 
 app.get('/', (request, response) => {
-  response.send('Hello - this is a simple REST interface ==-==> ' + versionIdentifier);
+  response.send('Hello - this is a simple REST interface -------> \n' + versionIdentifier);
 });
 
 app.get('/health', (request, response) => {
   if (ignore_switch == 0) {
     var millis = Date.now() - start;
 
-    response.send(versionIdentifier + ' ..  The REST interface has been running for ' + (millis / 1000) + ' seconds');
+    response.send(versionIdentifier + ' ..  The REST interface has been running for ' + (millis / 1000) + ' seconds\n');
   }
 });
 

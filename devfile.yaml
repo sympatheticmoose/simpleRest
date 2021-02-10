@@ -28,7 +28,7 @@ commands:
         component: cnd
   - name: odo watch
     actions:
-      - workdir: '${CHE_PROJECTS_ROOT}/simpleRest'
+      - workdir: '${CHE_PROJECTS_ROOT}/simpleRest/source'
         type: exec
         command: odo watch
         component: cnd

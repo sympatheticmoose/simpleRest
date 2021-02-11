@@ -23,7 +23,7 @@ var counter = 0;
 var ignore_switch = 0;
 
 app.get('/', (request, response) => {
-  response.send('Hello - this is a simple REST interface ---> \n' + versionIdentifier);
+  response.send('Hello - this is a simple REST interface --------------> \n' + versionIdentifier);
 });
 
 app.get('/health', (request, response) => {

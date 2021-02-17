@@ -11,7 +11,7 @@ var start = Date.now();
 var log = bunyan.createLogger({
       name: "Simple Rest",
       streams: [{
-      path: '/var/log/simpleRest.log',
+      path: './simpleRest.log',
     }]
   });
 

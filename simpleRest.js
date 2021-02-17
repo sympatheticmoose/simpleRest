@@ -11,7 +11,7 @@ var start = Date.now();
 var log = bunyan.createLogger({
       name: "Simple Rest",
       streams: [{
-      path: './simpleRest.log',
+      path: '/var/log/simpleRest.log',
     }]
   });
 
@@ -24,6 +24,7 @@ var ignore_switch = 0;
 
 app.get('/', (request, response) => {
   response.send('Hello - this is a simple REST interface --------------> \n' + versionIdentifier);
+  log.info({app: 'simpleRest', phase: 'operational', version: versionIdentifier, ip: ip.address()}, " Root response " + counter);
 });
 
 app.get('/health', (request, response) => {
@@ -38,7 +39,7 @@ app.get('/ip', (request, response) => {
   if (ignore_switch == 0) {
     var messageText = ip.address() + " " + versionIdentifier;
     counter++;
-    log.info({app: 'simpleRest', phase: 'operational', version: versionIdentifier, counter: counter, ip: ip.address()}, " responded .... " + counter);
+    log.info({app: 'simpleRest', phase: 'operational', version: versionIdentifier, counter: counter, ip: ip.address()}, " IP response .... " + counter);
     response.json(messageText);
   }
 });

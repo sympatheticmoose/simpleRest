@@ -13,7 +13,3 @@ https://codeready-workspaces.apps.cluster-2ff8.2ff8.example.opentlc.com/factory?
 Alternatively,
 1. Add your prefered Che or CodeReady Workspaces instance: https://blog.sunix.org/factory (that would just do the right redirection to the right server based on your preferences)
 2. Start the workspace: [![Contribute](factory-contribute.svg)](https://codeready-workspaces.apps.cluster-2ff8.2ff8.example.opentlc.com/factory?url=https://github.com/marrober/simpleRest)
-
-![Application topology](topology.png "Application Topology")
-
-![CodeReady Workspaces](codeready-workspaces-preview.png "CodeReady Workspaces")

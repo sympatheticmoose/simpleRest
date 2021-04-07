@@ -1,6 +1,6 @@
 apiVersion: 1.0.0
 metadata:
-  name: cloud-native-developer
+  name: cloud-native-developer-2
 projects:
   - name: simpleRest
     source:
